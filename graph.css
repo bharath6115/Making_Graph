@@ -1,0 +1,47 @@
+h1{
+    font-family: Roboto, sans-serif;
+    border-bottom: 2px solid black;
+    margin:2% 0 0 5%;
+    color:brown
+}
+
+section{
+    background-color: #fdf0d5;
+    display:flex;
+    width : 90%;
+    height : 500px;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    margin: 3% 5%;
+}
+
+section div{
+    width : 7%;
+    border-width: 2px 2px 0 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 7% 7% 0 0;
+}
+
+#graph:nth-of-type(4n+1){
+    background-color: blue;
+    height : 40%;
+}
+
+#graph:nth-of-type(4n+2){
+    background-color: red;
+    height : 60%;
+}
+
+#graph:nth-of-type(4n+3){
+    background-color: orange;
+    height : 30%;
+}
+
+#graph:nth-of-type(4n){
+    background-color: green;
+    height : 20%;
+}
