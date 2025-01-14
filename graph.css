@@ -5,7 +5,31 @@ h1{
     color:brown
 }
 
-section{
+.graph {
+    background-color: #fdf0d5;
+    display: flex;
+    flex-direction: row;
+    margin : 3% 5% 0 5%;
+    padding-top: 1%;
+}
+
+.side {
+    background-color: #fdf0d5;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 2% 1% 0 1%;
+    justify-content: space-between;
+}
+
+.side div{
+    text-align: center;
+    font-family: roboto , sans-serif;
+    font-size : 1em;
+    width: 3%;
+}
+
+
+.in {
     background-color: #fdf0d5;
     display:flex;
     width : 90%;
@@ -15,15 +39,35 @@ section{
     justify-content: space-evenly;
     border-bottom: 3px solid black;
     border-left: 3px solid black;
-    margin: 3% 5%;
+    padding-top: 2%;
 }
 
-section div{
+.in div{
     width : 7%;
     border-width: 2px 2px 0 2px;
     border-color: black;
     border-style: solid;
     border-radius: 7% 7% 0 0;
+}
+
+.out {
+    background-color: #fdf0d5;
+    display:flex;
+    width : 82%;
+    /*side : div (3%) + padding (1% each side) + margin-right 5% + margin-left (5%) + */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    /* margin-top: 2%; */
+}
+
+.out div{
+    width : 7%;
+    text-align: center;
+    font-family: roboto , sans-serif;
+    font-size : 1.5em;
+    
 }
 
 #graph:nth-of-type(4n+1){
@@ -37,7 +81,7 @@ section div{
 }
 
 #graph:nth-of-type(4n+3){
-    background-color: orange;
+    background-color: plum;
     height : 30%;
 }
 
